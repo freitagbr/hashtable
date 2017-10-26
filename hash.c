@@ -19,9 +19,9 @@ int ht_hash(const char* s, const int prime, const int m) {
 }
 
 // computes a hash of a string and is resistent to collisions
-int ht_get_hash(const char* s, const int buckets, const int attempt) {
-    debug(("ht_get_hash(%s, %d, %d)", s, buckets, attempt));
-    const int hash_a = ht_hash(s, HT_PRIME_A, buckets);
-    const int hash_b = ht_hash(s, HT_PRIME_B, buckets);
-    return (hash_a + (attempt * (hash_b + 1))) % buckets;
+int ht_get_hash(const char* s, const int size, const int attempt) {
+    debug(("ht_get_hash(%s, %d, %d)", s, size, attempt));
+    const int hash_a = ht_hash(s, HT_PRIME_A, size);
+    const int hash_b = ht_hash(s, HT_PRIME_B, size);
+    return (hash_a + (attempt * (hash_b + 1))) % size;
 }
