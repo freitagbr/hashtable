@@ -3,10 +3,8 @@
 #include <string.h>
 #include <math.h>
 
+#include "primes.h"
 #include "debug.h"
-
-#define HT_PRIME_A 3626149
-#define HT_PRIME_B 3021377
 
 // computes a hash of a string
 int ht_hash(const char* s, const int prime, const int m) {
