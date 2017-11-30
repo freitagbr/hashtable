@@ -1,5 +1,3 @@
-// debug.h
-
 #ifndef DEBUG_H
 #define DEBUG_H
 
@@ -10,4 +8,4 @@
 # define debug(x) do {} while (0)
 #endif
 
-#endif
+#endif // DEBUG_H

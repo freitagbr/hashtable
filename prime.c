@@ -1,8 +1,6 @@
-// primes.c
+#include "prime.h"
 
 #include <math.h>
-
-#include "primes.h"
 
 /**
  * Determines if x is prime or not.

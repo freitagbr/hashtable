@@ -1,10 +1,9 @@
-// hash.c
+#include "hash.h"
+#include "prime.h"
+#include "debug.h"
 
 #include <string.h>
 #include <math.h>
-
-#include "primes.h"
-#include "debug.h"
 
 // computes a hash of a string
 int ht_hash(const char* s, const int prime, const int m) {

@@ -1,7 +1,15 @@
-// hashtable.h
-
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
+
+#include "hash.h"
+#include "prime.h"
+#include "debug.h"
+
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+#define HT_DEFAULT_BASE_SIZE 53
 
 typedef struct {
     char* key;
@@ -39,4 +47,4 @@ char* ht_search(ht_hashtable*, const char*);
 
 void ht_delete(ht_hashtable*, const char*);
 
-#endif
+#endif // HASHTABLE_H

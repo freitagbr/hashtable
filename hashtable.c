@@ -1,15 +1,11 @@
-// hashtable.c
+#include "hashtable.h"
+#include "hash.h"
+#include "prime.h"
+#include "debug.h"
 
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-
-#include "hashtable.h"
-#include "primes.h"
-#include "hash.h"
-#include "debug.h"
-
-#define HT_DEFAULT_BASE_SIZE 53
 
 // static item to replace deleted items
 static ht_item HT_NULL_ITEM = {NULL, NULL};
